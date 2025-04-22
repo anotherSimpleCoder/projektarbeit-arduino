@@ -14,8 +14,8 @@ jobs:
         uses: baileyjm02/markdown-to-pdf@v1
         with:
           input_dir: phase1
-          images_dir: .
-          image_import: phase1
+          images_dir: images
+          image_import: ./images
           output_dir: pdfs
           build_html: false
         

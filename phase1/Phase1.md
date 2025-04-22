@@ -20,7 +20,7 @@ Nachdem wir nun also den generellen Entwicklungsprozess beleuchtet haben, betrac
 
 Der Hersteller Arduino, bietet selbst eine integrierte Entwicklungsumgebung (kurz: IDE) an, um Code für das Arduino Board zu schreiben, zu kompilieren und auch auf das Board hochzuladen. Dies geschieht alles auf einer grafischen Benutzeroberfläche, welche wie folgt aufgebaut ist.
 
-![](./arduino-ide.png)
+![](./images/arduino-ide.png)
 (Quelle: https://www.chip.de/ii/4/2/9/4/3/5/5/2/e32aa9a3718b3afd.jpg; Abrufzeitpunkt: 22.04.2025; 09:50 Uhr)
 
 #### Installation
