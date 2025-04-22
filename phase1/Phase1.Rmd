@@ -147,7 +147,7 @@ Um die Wokwi Extension zu nutzen benötigt man eine Lizenz. Wokwi bietet eine ko
 Um ein Projekt mit der Arduino CLI und der Wokwi Extension aufzustezen muss eine andere Projektstruktur verwendet werden. Um hier Einrichtungshürden zu umgehen, wird ein Bash Script zur Verfügung gestellt, 
 welches verfügbar ist unter
 
-https://github.com/anotherSimpleCoder/projektarbeit-arduino/blob/main/phase1/scaffold.sh
+`https://github.com/anotherSimpleCoder/projektarbeit-arduino/blob/main/phase1/scaffold.sh`
 
 Dieses Skript baut eine Projektumgebung auf und das Kompilieren und einbinden der Artefakte in die Wokwi Umgebung wird möglich gemacht durch das Kommando 
 
