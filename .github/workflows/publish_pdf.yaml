@@ -1,0 +1,23 @@
+name: Publish PDF Files
+on: push
+
+jobs:
+  publish:
+    name: Export Markdown files to PDF
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Export Phase 1 PDF File
+        uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: phase1
+          output_dir: pdfs
+          build_html: false
+        
+      - name: Upload PDF files
+        with:
+          name: docs
+          path: pdfs
