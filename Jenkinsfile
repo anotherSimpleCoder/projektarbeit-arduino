@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'r-base'
+            image 'r-rmd'
             args '-u root' 
         }
     }
