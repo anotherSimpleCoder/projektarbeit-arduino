@@ -11,7 +11,7 @@ pipeline {
             steps {
                 dir('phase1') {
                     sh 'Rscript -e \'rmarkdown::render(\"Phase1.Rmd\")\''
-                    archiveArtifacts artifacts: '*', fingerprint: true
+                    archiveArtifacts artifacts: '*.pdf', fingerprint: true
                 }
             }
         }
