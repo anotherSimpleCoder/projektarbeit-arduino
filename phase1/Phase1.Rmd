@@ -106,7 +106,7 @@ Es sollte sichergestellt werden, dass die Boardplattform für welche man kompili
 1) Das CLI Kommando `arduino-cli core list` [8] wird ausgeführt.
 2) Ist die gewünschte Boardplattform nicht angegeben, so kann man diese mit folgendem CLI Kommando installieren: `arduino-cli core install <Boardplattform>` [9]
     
-     Darüber hinaus ist es auch möglich Boardplattformen von Drittanbietern zu installieren, darauf wird hier aber nicht weiter eingegangen
+Darüber hinaus ist es auch möglich Boardplattformen von Drittanbietern zu installieren, darauf wird hier aber nicht weiter eingegangen
 
 ##### 2.3.3 Kompilierungsartefakte
 
