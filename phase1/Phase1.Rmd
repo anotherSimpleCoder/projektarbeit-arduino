@@ -1,10 +1,15 @@
-# Projektarbeit: Software Entwicklung für Arduino
+---
+title: "Projektarbeit: Software Entwicklung für Arduino - Phase 1 Entwicklungsumgebung und Build Prozess"
+author: "Hanan Ahmed Ashir, Mathusan Saravanapavan, Amsakan Bavan"
+output: pdf_document
+---
+
+\tableofcontents
 
 ## Phase 1 Entwicklungsumgebung und Build Prozess
 
 Das Arduino ist ein Board, welches es ermöglicht selbstgeschriebenen Code, welcher für das Board ausgelegt ist auf dessen Hardware auszuführen und damit Probleme zu lösen. Dabei gibt es unterschiedliche Arten und Weisen, wie man für einen Arduino entwickelt, welche in diesem Dokument beleuchtet und erläutert werden.
 
-\tableofcontents
 
 ### 0 Genereller Entwicklungsprozess
 
@@ -22,7 +27,7 @@ Nachdem wir nun also den generellen Entwicklungsprozess beleuchtet haben, betrac
 
 Der Hersteller Arduino, bietet selbst eine integrierte Entwicklungsumgebung (kurz: IDE) an, um Code für das Arduino Board zu schreiben, zu kompilieren und auch auf das Board hochzuladen. Dies geschieht alles auf einer grafischen Benutzeroberfläche, welche wie folgt aufgebaut ist.
 
-![](./images/arduino-ide.png)
+![](../images/arduino-ide.png)
 (Quelle: https://www.chip.de/ii/4/2/9/4/3/5/5/2/e32aa9a3718b3afd.jpg; Abrufzeitpunkt: 22.04.2025; 09:50 Uhr)
 
 #### 1.1 Installation
@@ -153,5 +158,5 @@ Neben der Möglichkeit Wokwi in VSCode zu nutzen, gibt es auch die Möglichkeit 
 
 
 ### 4. Quellen
-[1,2]: Hilfesektion der Arduino CLI (aufrufbar mit `arduino-cli help`) <br>
-[3,4,5,6,7,8,9,10]: https://docs.arduino.cc/arduino-cli/getting-started/?_gl=1*dnm5ej*_up*MQ..*_ga*MTIyNDY1NjI0OC4xNzQ0NzAxMjQ2*_ga_NEXN8H46L5*MTc0NDcwMTI0NC4xLjAuMTc0NDcwMTI0NC4wLjAuMTY0MTQ4MDg5Mw ; Abrufzeitpunkt: 14.04.2025, 13:27Uhr
+<p>1,2: Hilfesektion der Arduino CLI (aufrufbar mit `arduino-cli help`)</p><br>
+<p>3,4,5,6,7,8,9,10: https://docs.arduino.cc/arduino-cli/getting-started; Abrufzeitpunkt: 14.04.2025, 13:27Uhr </p>
