@@ -153,13 +153,15 @@ Um die Wokwi Extension zu nutzen benötigt man eine Lizenz. Wokwi bietet eine ko
 Um ein Projekt mit der Arduino CLI und der Wokwi Extension aufzustezen muss eine andere Projektstruktur verwendet werden. Um hier Einrichtungshürden zu umgehen, wird ein Bash Script zur Verfügung gestellt, 
 welches verfügbar ist unter
 
-`https://gist.github.com/anotherSimpleCoder/6cdc8d4981850ba3c7b7b85c3b93a3f6`
+`https://gist.github.com/anotherSimpleCoder/10e1a8d28eda741589ee259831e39269` (für Windows)
+
+`https://gist.github.com/anotherSimpleCoder/6cdc8d4981850ba3c7b7b85c3b93a3f6` (für macOS und Linux)
 
 Dieses Skript baut eine Projektumgebung auf und das Kompilieren und einbinden der Artefakte in die Wokwi Umgebung wird möglich gemacht durch das Kommando 
 
-`make compile`
+`./build.bat` (für Windows)
 
-Dabei wird vorausgesetzt, dass das Programm Make installiert ist.
+`bash build.sh` (für macOS und Linux)
 
 Geht man nun in die Simulationsumgebung und startet diese, wird der geschriebene Code in der Simulationsumgebung ausgeführt.
 
