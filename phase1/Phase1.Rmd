@@ -116,15 +116,25 @@ Darüber hinaus ist es auch möglich Boardplattformen von Drittanbietern zu inst
 
 ##### 2.3.3 Kompilierungsartefakte
 
-Will man die Artefakte der Kompilierung erhalten, so ist dies möglich durch setzen des –e Flags:
+Will man die Artefakte der Kompilierung erhalten, so ist dies möglich durch Setzen des –e Flags:
 
-`arduino-cli  compile –-fqbn <Vollständig qualifizierter Platinenname (kurz FQBN)> -e <Dateiname>.ino` [10]
+`arduino-cli  compile –-fqbn <Vollständig qualifizierter Platinenname (kurz FQBN)> -e <Dateiname>` [10]
 
 Dies liefert uns einen Ordner build mit folgender Struktur:
 
     build
         <FQBN des Board, jedoch mit . Anstatt : als Trennzeichen>
-            Build Artefakte (Binary, Bootloader, etc)  
+            - <Sketchname>.ino.elf (Kompilierter Arduino Sketch im ELF Binärformat)
+            - <Sketchname>.ino.eep (EEPROM Sektion der ELF Binary)
+            - <Sketchname>.ino.hex (EEPROM Sektion der ELF Binary im Hexformat)
+            - <Sketchname>.ino.with_bootloader.bin (Kompilierter Arduino Sketch im ELF mit Bootloader Binärformat)
+            - <Sketchname>.ino.with_bootloader.hex (Kompilierter Arduino Sketch im ELF mit Bootloader Hexformat)
+
+##### 2.3.5 Detailliertere Kompilierausgaben
+
+Will man die einzelnen Kompilierschritte betrachten, so ist dies möglich durch Setzen des -v Flags:
+
+`arduino-cli  compile –-fqbn <Vollständig qualifizierter Platinenname (kurz FQBN)> -v <Dateiname>` [11]
 
 ### 3 Boardlose Programmierung durch die Arduino-CLI und der Wokwi Simulationsumgebung mit Visual Studio Code
 
@@ -171,3 +181,4 @@ Neben der Möglichkeit Wokwi in VSCode zu nutzen, gibt es auch die Möglichkeit 
 ### 4. Quellen
 <p>1,2: Hilfesektion der Arduino CLI (aufrufbar mit `arduino-cli help`)</p><br>
 <p>3,4,5,6,7,8,9,10: https://docs.arduino.cc/arduino-cli/getting-started; Abrufzeitpunkt: 14.04.2025, 13:27Uhr </p>
+<p>10, 11: Hilfesektion der Arduino CLI bezüglich des `compile`Kommandos (aufrufbar durch `arduino-cli compile --help`)</p>
