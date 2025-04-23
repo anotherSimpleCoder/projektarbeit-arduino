@@ -78,22 +78,26 @@ Daraufhin sollte man den lokalen Zwischenspeicher für Bibliotheken und Boardpla
 
 Der Prozess des Entwickelns mit der CLI ist wie folgt:
 
-1) Der Code wird mithilfe eines Text Editors wie Visual Studio Code, Vim, Nano, usw. geschrieben und in einer .ino Datei hinterlegt. Dabei muss sichergestellt sein, dass der Name der Code Datei, dem Namen des darinliegenden Verzeichnisses übereinstimmt.
+1) Ein Sketch-Projekt Ordner wird mit dem CLI-Kommado 
+`arduino-cli sketch new <Sketch Name>`
+erstellt.
 
-2) Mit dem CLI Kommando:
+2) Der Code wird mithilfe eines Text Editors wie Visual Studio Code, Vim, Nano, usw. geschrieben und in einer .ino Datei hinterlegt. Dabei muss sichergestellt sein, dass der Name der Code Datei, dem Namen des darinliegenden Verzeichnisses übereinstimmt.
 
-    `arduino-cli  compile –-fqbn <Vollständig qualifizierter Platinenname (kurz FQBN)> <Dateiname>.ino`[5]
+3) Mit dem CLI Kommando:
+
+    `arduino-cli  compile –-fqbn <Vollständig qualifizierter Platinenname (kurz FQBN)> <Sketchname>`[5]
 
     wird der Code, für die angegebene Arduino Platine kompiliert. Man sollte hierbei beachten, dass die Plattform für diese Platine auch auf dem Rechner installiert ist. 
 
-3) Die Arduino-Platine wird an den Rechner angeschlossen.
-4) Mit dem CLI Kommando:
+4) Die Arduino-Platine wird an den Rechner angeschlossen.
+5) Mit dem CLI Kommando:
 
-    `arduino-cli upload –p <Geräteport, an welchem sich das Board befindet> --fqbn <Vollständig qualifizierter Platinenname> <Dateiname>.ino` [6]
+    `arduino-cli upload –p <Geräteport, an welchem sich das Board befindet> --fqbn <Vollständig qualifizierter Platinenname> <Sketchname>` [6]
     
     werden die kompilierten Artefakte auf das Board hochgeladen und bei erfolgreichem Hochladen, wird nach wenigen Sekunden, der hochgeladene Code auf dem Board ausgeführt.
 
-##### 2.3.1 Ermitteln des Vollständig quanitifierten Platinennamens
+##### 2.3.1 Ermitteln des Vollständig quanitifierten Platinennamens, der Comports und der Boardplattform
 
 Dabei kann der vollständig quantifizierte Platinenname der gewünschten Platine wie folgt ermittelt werden:
 
