@@ -29,7 +29,7 @@ Nachdem wir nun also den generellen Entwicklungsprozess beleuchtet haben, betrac
 
 Der Hersteller Arduino, bietet selbst eine integrierte Entwicklungsumgebung (kurz: IDE) an, um Code für das Arduino Board zu schreiben, zu kompilieren und auch auf das Board hochzuladen. Dies geschieht alles auf einer grafischen Benutzeroberfläche, welche wie folgt aufgebaut ist.
 
-![](../images/arduino-ide.png)
+![Die Arduino IDE mit kurzer Erklärung der einzelnen Sektionen und Tasten](../images/arduino-ide.png)
 (Quelle: https://www.chip.de/ii/4/2/9/4/3/5/5/2/e32aa9a3718b3afd.jpg; Abrufzeitpunkt: 22.04.2025; 09:50 Uhr)
 
 #### 1.1 Installation
@@ -48,6 +48,13 @@ Der Prozess des Entwickelns in der IDE ist wie folgt:
 Diese Art des Entwickelns, ist sehr intuitiv und einsteigerfreundlich, da die grafische Benutzeroberfläche sehr minimal gehalten und übersichtich gehalten ist und die nötigsten Funktionen griffbereit plaziert sind.
 
 **Hinweis:** Es gibt bei neueren Versionen der Arduino IDE auch die Möglichkeit den hochgeladenen Code auf seinem Board zu debuggen. Dies erleichert die Fehlersuche bei Bugs sehr stark. Dabei gilt aber zu beachten, dass diese Funktion nicht für alle Boards verfügbar ist. In unserem Fall, ist die Debugging Funktion für den Arduino Uno nicht verfügbar.
+
+#### 1.2.1 Detailliertere Kompilierausgaben
+
+Bei der Verifizierung bzw. Kompilierung des Sketch Codes, wird in der Compilerausgabe der aktuelle Stand der Kompilierung ausgegeben. Im Normalzustand, sind diese Ausgaben sehr grob gehalten und gehen nicht weiter auf das Kompiliergeschehen ein. Informationen wie der genutzte Compiler,
+gesetzte Compiler Flags und entstehende Artefakte werden in der normalen Compilerausgabe der Arduino IDE nicht angegeben. Es ist aber möglich diese anzuzeigen, durch Aktivieren der Option "Ausführliche Ausgabe". Diese Option kann jeweils für den Kompilier- und Hochladeprozess aktiviert werden:
+
+![Einstellungsfenster, welches die Option "Ausführliche Ausgabe" anbietet für das Kompilieren und Hochladen](../images/arduino-ide-ausfuehrliche-ausgabe.jpg)
 
 ### 2 Das Verwenden der Arduino CLI
 
@@ -108,7 +115,8 @@ Dabei kann der vollständig quantifizierte Platinenname der gewünschten Platine
 
 ##### 2.3.2 Platinenplattformen und deren Installation
 
-Es sollte sichergestellt werden, dass die Boardplattform für welche man kompiliert, installiert ist. Dies kann man wie folgt tun:
+Unter einer Boardplattform versteht man eine Ansammlung an Quellcode, welche speziell an das Arduino Board angepasst ist.
+Es sollte dabei sichergestellt werden, dass die Boardplattform für welche man kompiliert, installiert ist. Dies kann man wie folgt tun:
 1) Das CLI Kommando `arduino-cli core list` [8] wird ausgeführt.
 2) Ist die gewünschte Boardplattform nicht angegeben, so kann man diese mit folgendem CLI Kommando installieren: `arduino-cli core install <Boardplattform>` [9]
     
