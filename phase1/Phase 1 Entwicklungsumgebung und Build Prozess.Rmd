@@ -135,8 +135,10 @@ Dies liefert uns einen Ordner build mit folgender Struktur:
             - <Sketchname>.ino.elf (Kompilierter Arduino Sketch im ELF Binärformat)
             - <Sketchname>.ino.eep (EEPROM Sektion der ELF Binary)
             - <Sketchname>.ino.hex (EEPROM Sektion der ELF Binary im Hexformat)
-            - <Sketchname>.ino.with_bootloader.bin (Kompilierter Arduino Sketch im ELF mit Bootloader Binärformat)
-            - <Sketchname>.ino.with_bootloader.hex (Kompilierter Arduino Sketch im ELF mit Bootloader Hexformat)
+            - <Sketchname>.ino.with_bootloader.bin (Kompilierter Arduino Sketch im ELF 
+                mit Bootloader im Binärformat)
+            - <Sketchname>.ino.with_bootloader.hex (Kompilierter Arduino Sketch im ELF 
+                mit Bootloader im Hexformat)
 
 ##### 2.3.5 Detailliertere Kompilierausgaben
 
