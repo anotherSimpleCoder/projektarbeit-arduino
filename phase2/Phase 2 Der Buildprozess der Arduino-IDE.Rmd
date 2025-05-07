@@ -34,11 +34,11 @@ Beim Hochladen:
 
 ```arduino-cli upload -p <Geräteport, an welchem das Board angeschlossen ist> --fqbn <Vollständig qualifizierter Platinenname> <Sketchname>``` [5]
 
-### 3 Grafische Darstellung des Buildprozesses und Schritt für Schritt Erklärung
+## 3 Grafische Darstellung des Buildprozesses und Schritt für Schritt Erklärung
 
 ![Darstellung des Buildprozesses der Arduino-IDE.](../images/build-step-schritt-fuer-schritt.png) [1]
 
-#### 3.1 Vorverarbeitung durch Arduino-IDE
+### 3.1 Vorverarbeitung durch Arduino-IDE
 Zur Kompilierung des Codes benutzt die Arduino-IDE eine spezielle Version des  \textbf{GCC\footnote{GCC ist ein Toolchain, das für die Übersetzung des Codes in Assembly Sprache und für die Vorbereitung der ausführbaren Dateien zuständig ist.} Compilers}, welche an die Chiparchitektur des Arduino Boards angepasst ist. Wenn der Compiler aufgerufen wird, werden die folgenden Schriite ausgeführt: 
 
 - Präprozessor
@@ -48,11 +48,11 @@ Zur Kompilierung des Codes benutzt die Arduino-IDE eine spezielle Version des  \
 
 Die (*.ino) Datei wird durch den Compiler in eine C++ Datei kompiliert. Die notwendigen Bibliotheken, insbesondere **Arduino.h**, werden automatisch eingebunden. 
 
-#### 3.2 Präprozessor-Schritte mit GCC
+### 3.2 Präprozessor-Schritte mit GCC
 Bevor der Arduino-Sketch in Maschinencode übersetzt wird, wird er von einem C++ Präprozessor bearbeitet. Dieser ist ein Teil vom Compiler und führt Textverarbeitungen und Entfernungen durch. Das heißt, dass Header-Dateien und 
 Libraries reinkopiert und bedingte Ersetzungen durch ```#ifdef``` oder  ```#ifndef``` ausgewertet werden. Die Kommentare werden auch in diesem Schritt entfernt und man bekommt am Ende eine lange, vollständige .cpp-Datei. 
 
-#### 3.3 Kompilierung
+### 3.3 Kompilierung
 Dieser Prozess besteht insgesamt aus zwei Schritten.
 
 Die **Kompilierung** wandelt die erweiterte C++ Datei in Assembler-Code um. Das ist maschinennaher Code für den Prozessor, aber nicht der endgültige Code.
@@ -63,25 +63,25 @@ Erst bei der Kompilierung wird der Code auf Syntaxfehler geprüft und wir erhalt
 
 ***Hier ist es zu beachten, dass die Objektdatei an sich nicht ausgeführt werden kann und mit anderen Dateien und Bibliotheken zu einer Elf-Binärdatei gelinked werden muss.***
 
-#### 3.4 Linking
+### 3.4 Linking
 In diesem Schritt werden alle Objektdateien und Bibliotheken mit der Hardware, auf welcher der Code später laufen soll, verknüpft. Das heißt, dass der Linker Informationen bezüglich der Hardware benötigt.   
 
 Der Linker fügt alle notwendige Abhängigkeiten hinzu und macht aus den ganzen Dateien eine **Executable and Linking Format(*.elf)** Datei im Binärformat.
 
-#### 3.5 Erzeugung der HEX-Datei
+### 3.5 Erzeugung der HEX-Datei
 Der Hochladeprozess sieht vor, dass der komplierte Maschinencode im Hexadezimalformat vorliegt, um diesen im Speicher zu hinterlegen. 
 Durch das Tool ```avr-objcopy``` wird dies möglich gemacht,
 
-#### 3.6 Übertragung des Codes auf dem Board
+### 3.6 Übertragung des Codes auf dem Board
 Der letzte Schritt ist die Übertragung von unserem Code auf den Mikrocontroller. 
 Dies wird durch den **Programmer**\footnote{Ein Gerät oder Programm, die den .hex Code in den Speicher des Mikrocontrollers überträgt.}} 
 (in diesem Fall **avrdude**) gemacht.
 
-### 4 Zusammenfassung
+## 4 Zusammenfassung
 In diesem Dokument wurde der vollständige Buildprozess eines Arduino-IDE erläutert. Die Kenntnis über dieser Prozess hilft uns, Fehler besser einzuordnen, gezielter zu debuggen und schnell Probleme zu erkennen. 
 
 
-### 5 Quellen
+## 5 Quellen
 1) https://oer-informatik.de/arduino_compile_prozess
 2) https://ccrma.stanford.edu/planetccrma/man/man1/avr-g++.1.html
 3) https://www.incredibuild.com/integrations/gcc
