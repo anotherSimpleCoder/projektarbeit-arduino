@@ -17,4 +17,4 @@ iterativ, inkrementellen Ansatz für eine schenellere Prototypaufsetzung verwend
 
 ## 2 Definition des neuen Schablonenschemas
 
-Das neue Schablonenschema mit den User-Stories sieht wie folgt aus.
+Das neue Schablonenschema mit den User-Stories sieht wie folgt aus:
