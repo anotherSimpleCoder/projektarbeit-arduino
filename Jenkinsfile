@@ -9,10 +9,8 @@ pipeline {
     stages {
         stage('Build PDF') {
             steps {
-                dir('documents') {
-                    sh 'Rscript -e \'rmarkdown::render(\"*.Rmd\")\''
-                    archiveArtifacts artifacts: '*.pdf', fingerprint: true
-                }
+                sh 'bash render.sh'
+                archiveArtifacts artifacts: '*.pdf', fingerprint: true
             }
         }
     }
