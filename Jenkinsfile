@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Build PDF') {
             steps {
-                sh 'bash render.sh'
+                sh 'Rscript render.R'
                 archiveArtifacts artifacts: '*.pdf', fingerprint: true
             }
         }
