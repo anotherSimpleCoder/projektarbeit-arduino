@@ -18,14 +18,14 @@ Softwareentwicklungsprozesse durch agile Methoden effizienter gestaltet werden.
 
 Unsere neu entwickelte Projektschablone sieht wie folgt aus:
 
-1) Einführung - Projektstart
-    1.1) Projektname
-    1.2) Projektbeschreibung
-    1.3) Stakeholder Definition
-2) Requirements Engineering durch User Stories
-3) Hardwarekomponenten
-    3.1) Definition eines minimalen Hardwareprototypen
-    3.2) Ausarbeiten der Hardware User Stories durch agile Methoden
-4) Softwareentwicklung
-    4.1) Ausarbeiten der Software User Stories durch agile Methoden durch Testentwicklung
-    4.2) Softwareentwicklung gegen definierte Tests
+1. Einführung - Projektstart
+    + Projektname
+    + Projektbeschreibung
+    + Stakeholder Definition
+2. Requirements Engineering durch User Stories
+3. Hardwarekomponenten
+    + Definition eines minimalen Hardwareprototypen
+    + Ausarbeiten der Hardware User Stories durch agile Methoden
+4. Softwareentwicklung
+    + Ausarbeiten der Software User Stories durch agile Methoden durch Testentwicklung
+    + Softwareentwicklung gegen definierte Tests
