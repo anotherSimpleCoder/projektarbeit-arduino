@@ -1,5 +1,5 @@
 ---
-title: "Projektarbeit: Software Entwicklung für Arduino - Phase 1 Entwicklungsumgebung und Build Prozess"
+title: "Projektarbeit: Software Entwicklung für Arduino - Dokument 1 Entwicklungsumgebung und Build Prozess"
 author: "Hanan Ahmed Ashir, Mathusan Saravanapavan, Amsakan Bavan"
 output: pdf_document
 header-includes:

@@ -1,0 +1,51 @@
+---
+title: "Projektarbeit: Software Entwicklung für Arduino -  Dokument 3: Requirements Engineering bei Arduino Projekten"
+author: "Hanan Ahmed Ashir, Mathusan Saravanapavan, Amsakan Bavan"
+output: pdf_document
+header-includes:
+    - \renewcommand{\contentsname}{Inhaltsverzeichnis}
+---
+
+\tableofcontents
+
+## 1 Einführung
+
+Im Namen der Projektarbeit, wurde uns eine Schablone beziehungsweise ein Leitfaden gegeben, um Arduino-Projekte aufzusetzen. Dieser wurde im Namen einer vorherigen 
+Projektarbeit erstellt. Bei dieser ist aber aufgefallen, dass bei dieser ausgegangen wird, dass der Kunde technisches Know-How über Arduinos besitzt. Dies ist aber in der 
+Berufswelt nicht immer der Fall. Dementsprechend wäre ein besserer Ansatz, User Stories zu nutzen, da diese wenig auf technische Details setzen. Darüber hinaus kann man den
+iterativ, inkrementellen Ansatz für eine schenellere Prototypaufsetzung verwenden. Außerdem muss dann auch beim Requirements-Engineering nicht zwischen Anforderungserhebung und 
+Anforderungsspezifikation unterschieden werden und auch muss dann nicht zwischen funktionalen und nicht-funktionalen Anforderungen unterschieden werden.
+
+## 2 Definition des neuen Anforderungschablone
+
+Das neue Schablonenschema mit den User-Stories sieht wie folgt aus:
+
+    Als [Name der Rolle des Stakeholders],
+    möchte ich [Funktion / Ziel]
+    so dass [der Mehrwert der Funktion für den Stakeholder] 
+[1]
+
+Diese Schablone wurde übernommen vom Foliensatz der Vorlesung "Softwaretechnik" von Prof. Dr.-Ing Martin Burger. Im Vergleich zur vorherigen Schablone, ist diese hier viel leichtgewichtiger, übersichtlicher und technische 
+Spezifika werden hier gar nicht beachtet, da dies nicht nur eine hohe Erwartung an den Kunden hat und auch ein höhren Aufwand für das Requirements Engineering mitbringt, es schränkt auch die Entwickler und Projektmitarbeiter
+in ihrem Arbeiten und der Problemlösungskompetenz ein. Denn falls die Komponente gemäß der Anforderungen nicht zum Vorhaben passt, hat man dadurch nicht nur Material, sondern auch Personal, Zeit und andere Resourcen unnötig verwendet.
+Mit User-Stories hingegen wird dieser Aspekt freigelassen, um einen Spielraum zum Experiemntieren und Ausprobieren zu erhalten, wodurch auch viel schneller passendere Lösungen und Kompopnenten gefunden werden können. 
+
+Diese Stories können dann in Kombination mit agilen Arbeitsweisen wie Kanban oder Scrum kobiniert werden, um eine schnellere Entwicklungszeit zu erhalten und somit auch Stakeholdern schneller einen Prototypen vorzustellen.
+
+### 2.1 Anwendung der neuen Anforderungsschablone
+
+In der vorherigen Arbeit wurde die Schablone am Beispiel eines Garagentorprojektes angewandt. Tun wir dies auch mit unserer neu definierten Schablone:
+
+| alte Anforderungsschablone | neue Anforderungsschablone |
+| -------------------------- | -------------------------- |
+| Das Garagentor muss die Möglichkeit bieten über ein Potentiometer die Bewegungsgeschwindigkeit reguliert zu bekommen. | Als Nutzer möchte ich die Bewegungsgeschwindigkeit des Garagentors regulieren, so dass das Garagentor für bestimmte Fahrzeugtypen sich Dementsprechend bewegt. |
+| Die LED muss angesteuert werden, wenn sich das Garagentor bewegt | Als Nutzer möchte ich eine visuelle Anzeige bekommen, wenn sich das Garagentor bewegt, sodass ich und andere darüber gewarnt werden, wodrcuh keiner sich in der Nähe des Garagentors aufhält |
+| Das LCD-Display muss die Möglichkeit bieten Statuswerte (Status, Geschwindigkeit) anzuzheigen. | Als Nutzer möchte ich eine Übersicht der Statuswerte des Garagentors erhalten, um bei Fehlern oder sonstigem entsprechend zu handeln (beispielsweise bei zu niedriger Geschwindigkeit, diese erhöhen oder bei einem Defekt einen Techniker rufen.) |
+| Das Systen muss so entworfen werden, dass die Wartung und Fehlerdiagnose leicht durchführbar sind. | Als Techniker möchte ich ein für mich verständliches System, so dass ich die Wartung und Fehlerdiagnose leichter durchführen kann. |
+| Das Interface und die Bedienung des System müssen intuitiv und einfach sein. | Als Nutzer möchte ich das System und die Bedienoberfläche benutzerfreundlich ist, sodass die Handhabung des Garagentors für mich intuitiv und einfach ist. |
+| Das System sollte erweiterbar sein, um zukünftige Funktionalitäten leicht integrieren zu können. | Als Projektmitarbeiter möchte ich ein erweiterbares System, sodass zukünftige Funktionalitäten leicht integrierbar sind. |
+
+Hierbei fällt auch auf, dass bei der alten Anforderungsschablone auch wenig Wert auf den Kundenmehrwert gesetzt wurde, welches bei der Durchführung des Projektes auch helfen kann, einzelne User-Stories zu priorisieren abhängig vom Kundenmehrwert, welche die User-Story liefert.
+
+## 3 Quellen
+[1]: Folie 8 aus dem Foliensatz (WS 2024/2025) der Vorlesung Softwaretechnik von Prof. Dr.-Ing Martin Burger
