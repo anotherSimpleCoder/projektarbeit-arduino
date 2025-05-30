@@ -128,7 +128,7 @@ Ziel: Smart Home Anwendungen, können das Garagentor über die serielle Schnitts
 Bei Kanban arbeitet man mit sogenannten Kanban-Boards. Auf diesem Board werden die User-Stories in Spalten gelegt. Dabei repräsentieren die Spalten unterschiedliche Arbeitsstände (bspw. *To-Do*, *In Arbeit* und *Abgeschlossen*).
 Hier ist ein Beispiel für solch ein Kanban-Board:
 
-![Beispiel eines Kanban-Boards [2]](../images/kanban-beispiel.webp)
+![Beispiel eines Kanban-Boards [2]](../images/kanban-beispiel.png)
 
 Hierbei können die einzelnen Features, welche wir in 3.2.2.1 genannt haben, in eigene Arbeitspakete fassen, welche durch das Kanban-Board durchgereicht werden.
 
