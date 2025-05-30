@@ -107,7 +107,7 @@ Dies bezeichnet eine Menge an Zielen, welche man innerhalb eines gegebenen Zeitr
 Am Ende des Zeitraums werden dann implementierte Features ausgeliefert. Kommt es hierbei zu Komplikationen (bspw. dass bestimmte User-Stories im gegebenen Zeitrahmen nicht abgeschlossen werden konnten), so wird das weitere Vorgehen bei einer Sprint Retrospektive 
 bestimmt.
 
-![Eine kompakte Übersicht des Scrum Frameworks [1]](https://www.it-agile.de/fileadmin/bilder/wissen/Bierdeckel_20_Vor.png)
+![Eine kompakte Übersicht des Scrum Frameworks [1]](../images/scrum-schaubild.png)
 
 In unserem Beispiel können wir die Tabelle in 3.3.1 als Product Backlog nehmen und daraus folgende Inkremente bauen, welche in dafür vorgesehene Sprints implementiert werden:
 
@@ -128,7 +128,7 @@ Ziel: Smart Home Anwendungen, können das Garagentor über die serielle Schnitts
 Bei Kanban arbeitet man mit sogenannten Kanban-Boards. Auf diesem Board werden die User-Stories in Spalten gelegt. Dabei repräsentieren die Spalten unterschiedliche Arbeitsstände (bspw. *To-Do*, *In Arbeit* und *Abgeschlossen*).
 Hier ist ein Beispiel für solch ein Kanban-Board:
 
-![Beispiel eines Kanban-Boards [2]](https://www.salesgoesdigital.com/wp-content/uploads/2023/08/Beispiel-eines-Kanban-Boards-mit-vier-Spalten-980x551.png)
+![Beispiel eines Kanban-Boards [2]](../images/kanban-beispiel.png)
 
 Hierbei können die einzelnen Features, welche wir in 3.2.2.1 genannt haben, in eigene Arbeitspakete fassen, welche durch das Kanban-Board durchgereicht werden.
 
