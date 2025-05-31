@@ -8,7 +8,7 @@ header-includes:
 
 \tableofcontents
 
-## 1 Einführung
+# 1 Einführung
 
 Eine Schablone für die Arduinosoftwareentwicklung wurde gegeben. Dabei gibt es einige Verbesserungen, die bei dieser Schablone gemacht werden können. 
 Eine wurde im dritten Dokument schon aufgeführt durch die Nutzung von User Stories im Requirements Engineering. Dazu können die Entwurfsprozesse der Hardware und die
@@ -150,7 +150,7 @@ In unserem Fall, können wir durch die in 3.2 genannten User Stories folgende Te
 Diese Tests können mit Frameworks wie Google Test und auch TinkerCAD/Wokwi durchgeführt werden. Dabei verwendet man Google Test für Unit und Integrationstests, während man TinkerCAD für End-to-End Tests verwendet.
 Für die Entiwicklung mit Google Test und Wokwi, kann auf die Projektstruktur von Dokuemnt 1 zurückgegriffen werden.
 
-# Quellen
+# 4 Quellen
 
 [1] https://www.it-agile.de/fileadmin/bilder/wissen/Bierdeckel_20_Vor.png (Abrufzeitpunkt: 30.05.2025, 12.15 Uhr)
 [2] https://www.salesgoesdigital.com/wp-content/uploads/2023/08/Beispiel-eines-Kanban-Boards-mit-vier-Spalten-980x551.png (Abrufzeitpunkt: 30.05.2025, 12:42 Uhr)
