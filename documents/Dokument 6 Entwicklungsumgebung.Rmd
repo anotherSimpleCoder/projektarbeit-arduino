@@ -1,0 +1,33 @@
+---
+title: "Projectarbeit: Software Entwicklung für Arduino - Dokument 6: Die Entwicklungsumgebung"
+author: "Hanan Ahmed Ashir, Mathusan Saravanapavan, Amsakan Bavan"
+output: pdf_document
+header-includes:
+    - \renewcommand{\contentsname}{Inhaltsverzeichnis}
+---
+
+\tableofcontents
+
+# 1 Einführung
+
+Im letzten Dokument haben wir eine neue Version der Projektschablone vorgstellt, welche auf agilen Methoden basiert, um diese in bestehende agile Frameworks und Projektstrukturen zu implementieren.
+Dies beschleunigt nicht nur den Entwicklungsprozess, sondern bietet dem Kunden auch die Möglichkeit, sich im Entwicklungsprozess einzubringen und innerhalb kürzester Zeit, einen ersten Prototypen zu erhalten.
+In diesem Dokument betrachten wir einige Entwicklungsumgebungen, welche wir verwenden können, um die Softwareentwicklung des Projektes zu realisieren. Dabei setzen wir einen hohen Fokus auf Testgetriebene Entwicklung, um
+hohe Codequalität schon bei der Entwicklung zu garantieren.
+
+# 2 Die Entwicklungsumgebungen
+
+Wie in Dokument 1 und 2 schon besprochen wurde, gibt es viele Wege, Software für die Arduino Platine zu entwickeln. Da wir, aber auch testgetrieben entwickeln wollen, reichen einfache Umgebungen wie die Arduino IDE oder ein einfacher Texteditor mit der
+Arduino-CLI nicht aus. Dies sind einige Möglichkeiten, um testgetrieben für den Arduino zu entwickeln:
+
+|Editor|Compiler|Simulation|Testframework|
+|------|--------|----------|-------------|
+|Visual Studio Code|Arduino CLI|Wokwi VSCode Erweiterung|Google Test|
+|Visual Studio Code|Arduino CLI|TinkerCAD|Google Test|
+|Visual Studio Code|PlatformIO|PlatformIO|Google Test|
+|Visual Studio Code|Arduino CLI|ArduinoFake|Google Test|
+
+Dabei handelt es sich bei Arduino Fake um eine Mock Bibliothek, welche einen Arduino simuliert. [1]
+
+# 3 Quellen
+[1] https://github.com/FabioBatSilva/ArduinoFake; Abrufzeitpunkt: 04.06.2025, 16:15 Uhr
