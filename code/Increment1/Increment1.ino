@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 const int RED_LED_PIN = 10;
 const int GREEN_LED_PIN = 11;
 
