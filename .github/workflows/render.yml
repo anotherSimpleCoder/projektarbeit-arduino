@@ -1,0 +1,16 @@
+name: Render documents with rmarkdown-action
+on: push
+
+jobs:
+  renderDocument:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Git repository
+        uses: actions/checkout@v4
+    
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: |
+            titelseite.tex
+            projektBericht.tex
