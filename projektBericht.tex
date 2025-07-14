@@ -1,0 +1,97 @@
+\documentclass[paper=a4,fontsize=12pt,ngerman]{scrartcl}
+
+\usepackage[utf8]{inputenc}				
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage[ngerman]{babel}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[a4paper,left=25mm,right=35mm,top=25mm,bottom=30mm]{geometry}
+\usepackage{parskip}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{subcaption}
+\usepackage{hyphenat}
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue},
+  stringstyle=\color{red},
+  commentstyle=\color{green!50!black},
+  showstringspaces=false,
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  frame=single,
+  breaklines=true
+}
+
+\begin{document}
+
+\pagenumbering{roman}
+\pagestyle{plain}
+
+% Einbinden der Titelseite
+\include{titelseite}
+
+% Hier ist der Abstract
+\section*{Abstract}
+
+
+\newpage
+\section*{Selbstständigkeitserklärung}
+Ich versichere, dass ich die vorliegende Arbeit selbstständig verfasst und 
+keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe.
+Insbesondere habe ich alle KI-basierten Werkzeuge angegeben, die ich bei
+der Erstellung, Übersetzung oder Überarbeitung des Textes verwendet habe.
+
+Ich erkläre hiermit weiterhin, dass die vorgelegte Arbeit zuvor weder von mir 
+noch von einer anderen Person an dieser oder einer anderen Hochschule 
+eingereicht wurde.
+
+Darüber hinaus ist mir bekannt, dass die Unrichtigkeit dieser Erklärung eine 
+Benotung der Arbeit mit der Note \glqq nicht ausreichend\grqq \ zur Folge hat 
+und einen Ausschluss von der Erbringung weiterer Prüfungsleistungen zur Folge 
+haben kann.
+\bigskip
+ 
+Saarbrücken, den 09.07.2025
+
+\smallskip
+Unterschrift
+
+
+% Das Inhaltsverzeichnis
+\clearpage
+\tableofcontents 
+
+\clearpage
+\pagenumbering{arabic}
+
+% Hier beginnt das erste Kapitel
+\chapter*{Entwicklungsumgebung und Build Prozess}
+
+\subsection{Genereller Entwicklungsprozess}
+
+\subsection{Das Verwenden der Arduino IDE}
+
+\subsubsection{Installation}
+
+\subsubsection{Entwicklungsprozess}
+
+\subsubsection{Detaillierte Kompilierausgaben}
+
+
+% Hier beginnt das Literaturverzeichnis
+\clearpage
+\renewcommand\refname{Literaturverzeichnis}
+\bibliographystyle{alpha}
+\bibliography{literatur}
+\addcontentsline{toc}{section}{Literaturverzeichnis}
+
+
+% Hier beginnt der Anhang
+\clearpage
+
+
+\end{document}

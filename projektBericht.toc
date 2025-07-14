@@ -1,0 +1,7 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {subsection}{\numberline {0.1}Genereller Entwicklungsprozess}{1}{}%
+\contentsline {subsection}{\numberline {0.2}Das Verwenden der Arduino IDE}{1}{}%
+\contentsline {subsubsection}{\numberline {0.2.1}Installation}{1}{}%
+\contentsline {subsubsection}{\numberline {0.2.2}Entwicklungsprozess}{1}{}%
+\contentsline {subsubsection}{\numberline {0.2.3}Detaillierte Kompilierausgaben}{1}{}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
