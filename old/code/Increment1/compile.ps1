@@ -17,7 +17,7 @@ $OBJCOPY="C:\Users\abav\AppData\Local\Arduino15\packages\arduino\tools\avr-gcc\7
     Increment1.ino `
     -o /dev/null
 
-echo "Preprocessed!"
+Write-Host "Preprocessed!"
 
 & $CXX `
     -c -g -Os -w `
@@ -34,7 +34,7 @@ echo "Preprocessed!"
     Increment1.ino `
     -o merged.cpp
 
-echo "Merged!"
+Write-Host "Merged!"
 
 & $CXX -c -g -Os -w `
     -std=gnu++11 `
@@ -49,19 +49,19 @@ echo "Merged!"
     merged.cpp `
     -o merged.o
 
-echo "Compiled!"
+Write-Host "Compiled!"
 
 & $CC -w -Os -g `
     -flto `
     -fuse-linker-plugin `
-    -Wl,--gc-sections `
+    -Wl --gc-sections `
     -mmcu=atmega328p `
     -o Increment1.ino.elf `
     merged.o `
     /home/amsakan/.cache/arduino/sketches/757C4BE98FC22B7CE1AB224DA15F72B9/../../cores/arduino_avr_uno_66e16a98b755b1b0ee421858be42c689/core.a `
     -L/home/amsakan/.cache/arduino/sketches/757C4BE98FC22B7CE1AB224DA15F72B9 -lm
 
-echo "Linked!"
+Write-Host "Linked!"
 
 & $OBJCOPY `
     -O ihex -j .eeprom `
