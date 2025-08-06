@@ -7,3 +7,6 @@
 [submodule "old/code/Increment1/lib/ArduinoCore-avr"]
 	path = old/code/Increment1/lib/ArduinoCore-avr
 	url = https://github.com/arduino/ArduinoCore-avr
+[submodule "SmartLock"]
+	path = SmartLock
+	url = git@github.com:anotherSimpleCoder/SmartLock.git
